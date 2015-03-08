@@ -11,5 +11,5 @@ run  apt-get  -y   install libdbus-1-dev  libgconf2-dev libgnome-keyring-dev lib
 add webrtc-build-scripts /webrtc-build-scripts
 workdir /webrtc-build-scripts
 run  source android/build.sh  && install_dependencies && get_webrtc
-
+ENV PATH $PATH:/webrtc-build-scripts/android/depot_tools
 
